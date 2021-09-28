@@ -1,0 +1,485 @@
+ /*Reset background*/
+ /**/
+ *{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+ }
+
+ html, body{
+    font-family: sans-serif;
+      /*Dat phong chu cho ca trang */
+ }
+ /*nut back to top */
+ #myBtn {
+    display:none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:#1b9ce3; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+ #header{
+     width: 100%;
+     height: 80px;
+ }
+
+ #header .container{
+     width: 1140px;
+     margin: 0px auto;  /*Cho ra giua. Nhung phai setup cho width la bao nhieu da*/
+     height: 80px;
+ }
+
+ #header .container div.logo{
+    width: 350px;
+    float: left;
+ }
+
+
+ #header .container div.logo img{
+    width: 100%;
+    height: 80px;
+ }
+
+
+ #header .container div.contact-info{
+     float: left;
+     width: 790px;
+     height: 80px;
+ }
+
+ #header .container div.contact-info ul {
+     margin: 0px;
+     padding: 0px;
+     list-style-type: none;
+ }
+
+
+ #header .container div.contact-info ul li{
+     display: inline-block;
+     height: 80px;
+     margin-left: 55px;
+ }
+
+ #header .container div.contact-info ul li .contact-icon{
+     float: left;
+     height: 80px;
+     width: 35px;
+     line-height: 80px;
+     margin-top: 25px;
+ }
+
+
+ #header .container div.contact-info ul li div.contact-text{
+     float: left;
+     height: 80px;
+     color: rgba(0,0,0,0.7);
+ }
+
+
+ #header .container div.contact-info ul li div.contact-text label {
+     width: 100%;
+     display: block;
+     font-weight: bold;
+     margin-top: 20px;
+ }
+
+
+ #header .container div.contact-info ul li a.register{
+     text-decoration: none;
+     display: block;
+     color: #FFF;
+     width: 250px;
+     border-radius: 40px;
+     text-align: center;
+     background: #1b9ce3;
+     font-size: 16px;
+     height: 40px;
+     line-height: 40px;
+     float: left;
+     margin-top: 20px;
+ }
+
+
+
+
+
+ #nav{
+     width: 100%;
+     background: #0d1128;
+     height: 50px;
+ }
+
+ #nav .container{
+     width: 1140px;
+     margin: 0px auto;
+ }
+
+
+ #nav .container ul.menu{
+     list-style-type: none;
+     margin: 0px;
+     padding: 0px;
+     float: left;
+     width: 700px;
+
+ }
+
+ #nav .container ul.menu li{
+     display: inline-block;
+ }
+
+ #nav .container ul.menu li a {
+     text-decoration: none;
+     height: 50px;
+     display: block;
+     line-height: 50px;
+     color:gray;
+     padding-right: 40px;
+ }
+
+
+ #nav .container ul.menu li :first-child a{
+     color: #1b9ce3;
+ }
+
+ #nav .form-search {
+     width: 400px;
+     float: right;
+     position: relative;
+
+ }
+
+ #nav .form-search .keyword {
+     width: 90%;
+     font-size: 16px;
+     border: 1px solid #999;
+     height: 40px;
+     margin-top: 5px;
+     text-indent: 15px;
+     border-radius: 20px;
+     color: rgba(225, 225, 225, 0.7);
+     background: transparent;
+ }
+
+ #nav .form-search .btn-seach {
+    width: 25px;
+    height: 25px;
+    border: none;
+    position: absolute;
+    top: 13px;
+    right: 50px;
+    background: transparent;
+ }
+
+ #banner {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+ }
+
+ #banner img{
+     width: 100%;
+ }
+
+ #feature{
+     width: 100%;
+     
+ }
+
+ #feature .container{
+     width: 1140px;
+     margin: 60px auto;
+     min-height: 300px;
+ }
+
+ #feature .container .feature-left,
+ #feature .container .feature-right{
+    float: left;
+ }
+
+ #feature .container .feature-left{
+     width: 750px;
+     
+
+ }
+
+
+ #feature .container .feature-left .card{
+     background: #f0f9fd;
+     float: left;
+     width: 320px;
+     height: 320px;
+     display: block;
+     margin-right: 50px;
+     padding: 20px 30px;
+     margin-bottom: 50px;
+     position: relative;
+ }
+
+ #feature .container .feature-left .desc {
+     padding: 15px 15px 30px 0px;
+     
+ }
+
+ #feature .container .feature-left .card .icon{
+     text-align: center;
+     color: #1b9ce3;
+     font-size: 50px;
+     margin-top: 20px;
+ }
+
+ #feature .container .feature-left .card h2{
+    text-align: center;
+    margin-top: 10px;
+    color: #233e62;
+    margin-bottom: 20px;
+ }
+
+ #feature .container .feature-left .card p{
+     line-height: 28px;
+     color: gray;
+     text-align: center ;
+     font-size: 16px;
+ }
+
+ #feature .container .feature-left .active-card{
+        background: #1b9ce3;
+ }
+
+ #feature .container .feature-left .active-card .active-icon,
+ #feature .container .feature-left .active-card .text-active{
+     color: #FFF;
+ }
+
+ #feature .container .feature-left .card:after{
+     content: '';
+     border-style: solid;
+     border-width: 0 50px 50px 0;
+     height: 0;
+     width: 0;
+     position: absolute;
+     right: 0px;
+     top: 0px;
+     border-color: transparent #FFF transparent transparent;
+ }
+
+h2.feature-title{
+    color: #223e62;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+
+
+ #feature .container .feature-right{
+    width: 360px;
+    border: 2px solid #d1ebf9;
+    padding: 10px;
+}
+ 
+#feature .container .feature-right img{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+
+#feature .container .feature-right h3{
+    font-size: 18px;
+    color: #223e62;
+    margin-bottom: 10px;
+}
+
+#feature .container .feature-right p{
+    color: gray;
+    text-align: justify;
+    line-height: 20px;
+}
+
+#feature .container .feature-right .contact-us{
+    display: block;
+    text-decoration: none;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    background: #1b9ce3;
+    margin-top: 15px;
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+}
+
+.guidance{
+    width: 100%;
+    height: 150px;
+    background:url(../image/background.JPG) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    clear: both;
+    z-index: 0;
+
+}
+
+.guidance:after{
+    position: absolute;
+    top:0px;
+    left:0px;
+    bottom: 0px;
+    right: 0px;
+    content: '';
+    z-index: -1;
+    opacity: 0.7;
+    background: linear-gradient(to right, #1566ad 0%, #1b9de3 100%);
+}
+
+.guidance h2{
+    text-align: center;
+    color: #FFF;
+    line-height: 150px;
+}
+
+
+#service {
+    width: 100%;
+}
+
+#service .container{
+    width: 1140px;
+    margin: 100px auto;
+
+}
+
+#service .container h1{
+    color: #233e62;
+    text-align: center;
+}
+
+#service .container p.desc{
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    line-height: 28px;
+}
+
+#service .container .our-service{
+    list-style-type: none;
+    margin: 50px 0px 0px 0px;
+    padding: 0px;
+}
+
+#service .container .our-service li{
+    float: left;
+    width: 330px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+#service .container .our-service li .icon{
+    text-align: center;
+}
+
+#service .container .our-service li .span.material-icons{
+    text-align: center;
+    color: #1b9ce3;
+    font-size: 50px;
+}
+
+#service .container .our-service li .icon img{
+    width: 200px;
+    height: 200px;
+}
+
+
+#service .container .our-service li h2{
+    text-align: center;
+    color: #223e62;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#footer{
+    width: 100%;
+    height: 50px;
+    background-color:#0d1128;
+    
+}
+#footer p{
+    color: gray;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#blog_content {
+  
+    width: 900px;
+    margin: 50px auto;
+    font-family: monospace;
+}
+
+#blog_content h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25;
+}
+
+#blog_content img{
+    width: 500px;
+    height: auto;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+
+#blog_content p {
+    text-indent: 30px;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+
+
+
+#about{
+    margin: 50px auto;
+    width: 1000px;
+    background: coral;
+}
+
+#about h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25;
+}
+
+#about img{
+    width: 300px;
+    height: auto;
+}
+
+
