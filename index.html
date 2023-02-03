@@ -222,7 +222,8 @@
     </div>
 
     <div id="footer">
-        <p>©2021 Bản Quyền Thuộc Về Huy_Hen_Hao Inc.</p>
+        <p>Copyright ©2021 Bản Quyền Thuộc Về Huy_Hen_Hao Inc.</p>
+        <p>Số người đã xem <span id="visits"></span></p>
     </div>
 
 <!-- #region -->
@@ -257,7 +258,14 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
     <!-- #endregion -->
-
+    <!--View count api-->
+    <script src="https://api.countapi.xyz/hit/DoAnWebsite.github.io
+    /visits?callback=liveViews" async></script>
+    <script>
+    function liveViews(response) {
+    document.getElementById('visits').innerText = response.value;
+    }
+    </script>
 
 </body>
 
